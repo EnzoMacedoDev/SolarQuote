@@ -32,6 +32,7 @@ public class SecurityConfig {
         CorsConfiguration configuracao = new CorsConfiguration();
         configuracao.setAllowedOrigins(List.of(
                 "http://localhost:5173",
+                "http://localhost:4173",
                 "https://solarquote-a60b.onrender.com"
         ));
         configuracao.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "OPTIONS"));
