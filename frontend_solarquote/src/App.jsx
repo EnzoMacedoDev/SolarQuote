@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
  
 import { AuthProvider } from './context/AuthContext';
  
@@ -14,7 +14,7 @@ export default function App() {
   return (
     <AuthProvider>
  
-      <BrowserRouter>
+      <HashRouter>
  
         <Routes>
  
@@ -58,7 +58,7 @@ export default function App() {
  
         </Routes>
  
-      </BrowserRouter>
+      </HashRouter>
  
     </AuthProvider>
   );
